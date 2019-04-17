@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app_name" ng-init=" person = {fname: 'Harsh', lname: 'Mehta'  }; 
+    state = [{city: 'Baroda',state: 'Gujarat'}, {city: 'Ahmedabad',state: 'Gujarat'}] ">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,22 @@
 
 </head>
 <body>
-    
+    <div ng-controller="ctrl1">
 
-    
+        <span>Values</span>
+        <input type="text" ng-model='first' />
+        <input type="text" ng-model="second" />
+
+        <button ng-click = 'updateValue()'>Sum</button>
+        <br>
+        <br>
+         {{calculation}}
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="main.js"></script>
-    <script></script>
+    
 </body>
 
 </html>
